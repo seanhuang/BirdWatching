@@ -7,6 +7,7 @@
 //
 
 #import "BirdsDetailViewController.h"
+#import "BirdSighting.h"
 
 @interface BirdsDetailViewController ()
 - (void)configureView;
@@ -16,22 +17,47 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
+@synthesize sighting = _sighting, birdNameLabel = _birdNameLabel, locationLabel = _locationLabel, dateLabel = _dateLabel;
+
+//- (void)setDetailItem:(id)newDetailItem
+//{
+//    if (_detailItem != newDetailItem) {
+//        _detailItem = newDetailItem;
+//        
+//        // Update the view.
+//        [self configureView];
+//    }
+//}
+- (void)setSighting:(BirdSighting *) newSighting
 {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
+    if (_sighting != newSighting) {
+        _sighting = newSighting;
         // Update the view.
         [self configureView];
     }
 }
 
+//- (void)configureView
+//{
+//    // Update the user interface for the detail item.
+//
+//    if (self.detailItem) {
+//        self.detailDescriptionLabel.text = [self.detailItem description];
+//    }
+//}
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+    BirdSighting *theSighting = self.sighting;
+    static NSDateFormatter *formatter = nil;
+    if (formatter == nil) {
+        formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateStyle:NSDateFormatterMediumStyle];
+    }
+    if (theSighting) {
+        self.birdNameLabel.text = theSighting.name;
+        self.locationLabel.text = theSighting.location;
+        self.dateLabel.text = [formatter stringFromDate:(NSDate *)theSighting.date];
     }
 }
 
@@ -40,6 +66,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+}
+
+- (void)viewDidUnload
+{
+    self.sighting = nil;
+    [super viewDidUnload];
 }
 
 - (void)didReceiveMemoryWarning

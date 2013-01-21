@@ -19,6 +19,8 @@
 		22BDB81F1619FCC400ACC784 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BDB81D1619FCC400ACC784 /* MainStoryboard.storyboard */; };
 		22BDB8221619FCC400ACC784 /* BirdsMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BDB8211619FCC400ACC784 /* BirdsMasterViewController.m */; };
 		22BDB8251619FCC400ACC784 /* BirdsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BDB8241619FCC400ACC784 /* BirdsDetailViewController.m */; };
+		22BDB82D161AC7BF00ACC784 /* BirdSighting.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BDB82C161AC7BF00ACC784 /* BirdSighting.m */; };
+		22BDB830161ADBDA00ACC784 /* BirdSightingDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BDB82F161ADBDA00ACC784 /* BirdSightingDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		22BDB8211619FCC400ACC784 /* BirdsMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirdsMasterViewController.m; sourceTree = "<group>"; };
 		22BDB8231619FCC400ACC784 /* BirdsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BirdsDetailViewController.h; sourceTree = "<group>"; };
 		22BDB8241619FCC400ACC784 /* BirdsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirdsDetailViewController.m; sourceTree = "<group>"; };
+		22BDB82B161AC7BF00ACC784 /* BirdSighting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdSighting.h; sourceTree = "<group>"; };
+		22BDB82C161AC7BF00ACC784 /* BirdSighting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdSighting.m; sourceTree = "<group>"; };
+		22BDB82E161ADBDA00ACC784 /* BirdSightingDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdSightingDataController.h; sourceTree = "<group>"; };
+		22BDB82F161ADBDA00ACC784 /* BirdSightingDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdSightingDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				22BDB8141619FCC400ACC784 /* BirdsAppDelegate.h */,
 				22BDB8151619FCC400ACC784 /* BirdsAppDelegate.m */,
 				22BDB81D1619FCC400ACC784 /* MainStoryboard.storyboard */,
+				22BDB82B161AC7BF00ACC784 /* BirdSighting.h */,
+				22BDB82E161ADBDA00ACC784 /* BirdSightingDataController.h */,
+				22BDB82F161ADBDA00ACC784 /* BirdSightingDataController.m */,
+				22BDB82C161AC7BF00ACC784 /* BirdSighting.m */,
 				22BDB8201619FCC400ACC784 /* BirdsMasterViewController.h */,
 				22BDB8211619FCC400ACC784 /* BirdsMasterViewController.m */,
 				22BDB8231619FCC400ACC784 /* BirdsDetailViewController.h */,
@@ -183,6 +193,8 @@
 				22BDB8161619FCC400ACC784 /* BirdsAppDelegate.m in Sources */,
 				22BDB8221619FCC400ACC784 /* BirdsMasterViewController.m in Sources */,
 				22BDB8251619FCC400ACC784 /* BirdsDetailViewController.m in Sources */,
+				22BDB82D161AC7BF00ACC784 /* BirdSighting.m in Sources */,
+				22BDB830161ADBDA00ACC784 /* BirdSightingDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
