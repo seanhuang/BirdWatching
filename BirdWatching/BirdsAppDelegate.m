@@ -8,22 +8,28 @@
 
 #import "BirdsAppDelegate.h"
 
+// DataController
 #import "BirdSightingDataController.h"
+// ViewController
 #import "BirdsMasterViewController.h"
 
 @implementation BirdsAppDelegate
 
+// app 启动结束之后
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    // Override point for customization after application launch.
-//    return YES;
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    BirdsMasterViewController *firstViewController =
-    (BirdsMasterViewController *)[[navigationController viewControllers]
-                                  objectAtIndex:0];
-    BirdSightingDataController *aDataController =
-    [[BirdSightingDataController alloc] init];
+    // Override point for customization after application launch.
+    // return YES;
+
+    // 获取 导航控制器 之后才能获取 视图控制器,把 数据控制器 挂到 视图控制器 上去
+    // 导航控制器
+    UINavigationController *navigationController = (UINavigationController *) self.window.rootViewController;
+    // 视图控制器
+    BirdsMasterViewController *firstViewController = (BirdsMasterViewController *)[[navigationController viewControllers] objectAtIndex:0];
+    // 数据控制器
+    BirdSightingDataController *aDataController = [[BirdSightingDataController alloc] init];
     firstViewController.dataController = aDataController;
+
     return YES;
 }
 							

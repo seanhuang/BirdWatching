@@ -7,14 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "BirdSighting.h"
+
 @class BirdSighting;
 
 @interface BirdSightingDataController : NSObject
+// 保存 BirdSighting 对象
 @property (nonatomic, copy) NSMutableArray *masterBirdSightingList;
 
+// BirdSighting 对象总数
 - (NSUInteger)countOfList;
 - (BirdSighting *)objectInListAtIndex:(NSUInteger)theIndex;
+// 新增 BirdSighting 对象
 - (void)addBirdSightingWithName:(NSString *)inputBirdName location:(NSString *)inputLocation;
 
 @end

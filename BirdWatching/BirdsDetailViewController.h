@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 @class BirdSighting;
 
+// 也是 UITableViewController
 @interface BirdsDetailViewController : UITableViewController
 
 @property (strong, nonatomic) BirdSighting *sighting;
@@ -16,6 +17,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
-//@property (strong, nonatomic) id detailItem;
-//@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+// @property (strong, nonatomic) id detailItem;
+// @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end

@@ -17,17 +17,20 @@
 
 #pragma mark - Managing the detail item
 
-@synthesize sighting = _sighting, birdNameLabel = _birdNameLabel, locationLabel = _locationLabel, dateLabel = _dateLabel;
+@synthesize sighting = _sighting;
+@synthesize birdNameLabel = _birdNameLabel;
+@synthesize locationLabel = _locationLabel;
+@synthesize dateLabel = _dateLabel;
 
-//- (void)setDetailItem:(id)newDetailItem
-//{
+// - (void)setDetailItem:(id)newDetailItem
+// {
 //    if (_detailItem != newDetailItem) {
 //        _detailItem = newDetailItem;
-//        
+       
 //        // Update the view.
 //        [self configureView];
 //    }
-//}
+// }
 - (void)setSighting:(BirdSighting *) newSighting
 {
     if (_sighting != newSighting) {
@@ -37,14 +40,14 @@
     }
 }
 
-//- (void)configureView
-//{
+// - (void)configureView
+// {
 //    // Update the user interface for the detail item.
-//
+
 //    if (self.detailItem) {
 //        self.detailDescriptionLabel.text = [self.detailItem description];
 //    }
-//}
+// }
 - (void)configureView
 {
     // Update the user interface for the detail item.
